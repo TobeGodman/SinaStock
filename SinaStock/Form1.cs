@@ -82,6 +82,7 @@ namespace SinaStock
                         dir.Create();
                     }
                     string savePath = receivePath + "\\" + date + ".xls";
+                    //下载数据
                     client.DownloadFile(URLAddress, savePath);
                 }
                 return true;
